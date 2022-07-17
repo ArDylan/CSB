@@ -49,69 +49,17 @@
             <div class="flex-1 px-10">
                 <img src="https://s3-alpha.figma.com/hub/file/948140848/1f4d8ea7-e9d9-48b7-b70c-819482fb10fb-cover.png" class="m-auto" alt="">
             </div>
-            <div class="flex-1 my-auto px-10 md:pl-32 pr-10 pt-5 md:pt-0">
-                <h1 class="">Slogan</h1>
+            <div class="flex-1 my-auto px-10 md:pl-32 pr-10 md:pt-0">
+                <h1 class="font-bold text-2xl">Tentang Perusahaan</h1>
                 <div>We are a company engaged in the field of General Contractor and Supplier.
                     Our company is an experienced company in the field of General Contractor
                     & Supplier with employees who are experts in their fields.</div>
             </div>
         </div>
-        <div class="bg-[#F0C929] px-20 py-10">
-            <h1 class="font-bold text-white text-2xl text-center pb-10">SERVICES</h1>
-            <div class="md:flex">
-                <div class="bg-white rounded-lg p-10 flex-1 m-5 shadow-lg">
-                    <img src="https://s3-alpha.figma.com/hub/file/948140848/1f4d8ea7-e9d9-48b7-b70c-819482fb10fb-cover.png" alt="">
-                    asdf
-                </div>
-                <div class="bg-white rounded-lg p-10 flex-1 m-5 shadow-lg">
-                    <img src="https://s3-alpha.figma.com/hub/file/948140848/1f4d8ea7-e9d9-48b7-b70c-819482fb10fb-cover.png" alt="">
-                    asdf
-                </div>
-                <div class="bg-white rounded-lg p-10 flex-1 m-5 shadow-lg">
-                    <img src="https://s3-alpha.figma.com/hub/file/948140848/1f4d8ea7-e9d9-48b7-b70c-819482fb10fb-cover.png" alt="">
-                    asdf
-                </div>
-                <div class="bg-white rounded-lg p-10 flex-1 m-5 shadow-lg">
-                    <img src="https://s3-alpha.figma.com/hub/file/948140848/1f4d8ea7-e9d9-48b7-b70c-819482fb10fb-cover.png" alt="">
-                    asdf
-                </div>
-            </div>
-        </div>
-        <div class="pt-10">
-            <h1 class="font-bold text-[#F0C929] text-2xl text-center pb-10">PARTNER SHIP</h1>
-            <p class="font-bold text-[#F0C929] text-lg text-center pb-10">Here are some of the clients we work with frequently:</p>
-            <div class="md:flex p-10">
-                <div class="bg-white rounded-lg p-10 flex-1 m-5 shadow-lg">
-                    <img src="https://s3-alpha.figma.com/hub/file/948140848/1f4d8ea7-e9d9-48b7-b70c-819482fb10fb-cover.png" alt="">
-                    asdf
-                </div>
-                <div class="bg-white rounded-lg p-10 flex-1 m-5 shadow-lg">
-                    <img src="https://s3-alpha.figma.com/hub/file/948140848/1f4d8ea7-e9d9-48b7-b70c-819482fb10fb-cover.png" alt="">
-                    asdf
-                </div>
-                <div class="bg-white rounded-lg p-10 flex-1 m-5 shadow-lg">
-                    <img src="https://s3-alpha.figma.com/hub/file/948140848/1f4d8ea7-e9d9-48b7-b70c-819482fb10fb-cover.png" alt="">
-                    asdf
-                </div>
-                <div class="bg-white rounded-lg p-10 flex-1 m-5 shadow-lg">
-                    <img src="https://s3-alpha.figma.com/hub/file/948140848/1f4d8ea7-e9d9-48b7-b70c-819482fb10fb-cover.png" alt="">
-                    asdf
-                </div>
-            </div>
-        </div>
-        <div class="bg-[#2A1A5E] md:flex w-full px-5 md:px-32 pt-20 text-white">
-            <div class="flex-1 md:pl-10 md:pr-32">
-                <img src="https://klikalamat.com/wp-content/uploads/2016/08/PT.-CAHAYA-SEBELAS-BINTANG.png" alt="" width="80" height="50">
-                <p class="mt-10">
-                    Jl. Syarifuddin Yoes Komplek Balikpapan Regency. Ruko Victorian Block V-2 no.2 Balikpapan Selatan. Kalimantan Timur
-                </p>
-                <div><i class="fa-solid fa-square-phone fa-xl text-[#F0C929] mt-10 text-center"></i><span class="ml-5">0542-7211614</span></div>
-                <div><i class="fa-solid fa-mobile fa-xl text-[#F0C929] mt-8 text-center"></i><span class="ml-5">0542-7211614</span></div>
-                <div><i class="fa-solid fa-envelope fa-xl text-[#F0C929] mt-8 text-center"></i><span class="ml-5">info@11bintang.com</span></div>
-            </div>
-            <div class="flex-1 mt-5 md:mt-0">
-                <iframe class="m-auto w-10/12" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2238.6954898917033!2d116.89241490069891!3d-1.2281543646764999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x9d789db2e72a996!2zMcKwMTMnNDAuOSJTIDExNsKwNTMnNDEuOSJF!5e0!3m2!1sid!2sid!4v1650540818113!5m2!1sid!2sid" width="450" height="337" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
+
+        <div>
+            <h1>VISI</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum debitis, aut vel totam error officia omnis doloremque eligendi amet porro excepturi eius iure, esse a in, magni inventore nobis! Necessitatibus!</p>
         </div>
         <div class="bg-[#2A1A5E] text-center text-white p-10">
             Copyright © 2022 PT CAHAYA SEBELAS BINTANG
