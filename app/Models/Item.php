@@ -16,5 +16,6 @@ class Item extends Model
         'warranty',
         'description',
         'image',
+        'price',
     ];
 }
