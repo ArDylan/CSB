@@ -10,11 +10,18 @@
     <link rel="stylesheet" href="https://unpkg.com/flowbite@1.4.2/dist/flowbite.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="https://cdn.tailwindcss.com"></script>
+    @livewireStyles
 </head>
-<body>
-    <div class="flex h-full min-h-screen">
+<body class="bg-gray-200">
+    <div class="flex">
         @include("layouts.sidebar")
-        @yield('content')
+        <div class="w-screen">
+            @include('layouts.navbar')
+            <div class="m-10 rounded-lg p-10 bg-white drop-shadow">
+
+                @yield('content')
+            </div>
+        </div>
     </div>
     @include("layouts.footer")
 </body>

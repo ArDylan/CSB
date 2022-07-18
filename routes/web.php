@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\CategoryController;
 
 /*
 |--------------------------------------------------------------------------
@@ -17,4 +18,5 @@ use App\Http\Controllers\HomeController;
 
 Route::get('/', [HomeController::class, 'index'])->name('home');
 Route::get('/aboutus', [HomeController::class, 'aboutus'])->name('aboutus');
+Route::get('/admin/category', [CategoryController::class, 'index'])->name('category');
 
