@@ -18,5 +18,12 @@ use App\Http\Controllers\CategoryController;
 
 Route::get('/', [HomeController::class, 'index'])->name('home');
 Route::get('/aboutus', [HomeController::class, 'aboutus'])->name('aboutus');
+
+//category
 Route::get('/admin/category', [CategoryController::class, 'index'])->name('category');
+Route::get('/admin/category/create', [CategoryController::class, 'create'])->name('category.create');
+Route::post('/admin/category/store', [CategoryController::class, 'store'])->name('category.store');
+Route::get('/admin/category/{category}', [CategoryController::class, 'edit'])->name('category.edit');
+Route::patch('/admin/category/{category}', [CategoryController::class, 'update'])->name('category.update');
+Route::delete('/admin/category/{category}', [CategoryController::class, 'delete'])->name('category.delete');
 
