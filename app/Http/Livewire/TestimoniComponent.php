@@ -3,7 +3,7 @@
 namespace App\Http\Livewire;
 
 use Livewire\Component;
-use App\Models\Customer;
+use App\Models\Testimoni;
 use Illuminate\Support\Facades\Log;
 
 use Illuminate\Support\Str;
@@ -11,17 +11,16 @@ use Mediconesystems\LivewireDatatables\NumberColumn;
 use Mediconesystems\LivewireDatatables\Column;
 use Mediconesystems\LivewireDatatables\DateColumn;
 use Mediconesystems\LivewireDatatables\Http\Livewire\LivewireDatatable;
-
-class CustomerComponent extends LivewireDatatable
+class TestimoniComponent extends LivewireDatatable
 {
-    public $model = Customer::class;
-    public $customer;
-    // public $beforeTableSlot = "components.create-customer";
+    public $model = Testimoni::class;
+    public $testimoni;
+    // public $beforeTableSlot = "components.create-testimoni";
 
     public function builder()
     {
-        $customer = Customer::query();
-        return $customer;
+        $testimoni = testimoni::query();
+        return $testimoni;
 
     }
 
@@ -40,17 +39,11 @@ class CustomerComponent extends LivewireDatatable
             ->label('No HP')
             ->alignCenter(),
             Column::callback(['image'], function ($image) {
-                $img = asset('storage/customer-image/'.$image);
+                $img = asset('storage/testimoni-image/'.$image);
                 return "<img class=\"w-16 text-center mx-auto md:w-32 lg:w-56\" src=\"$img\">";
             })->label('Image')
             ->alignCenter()
             ->unsortable(),
-            NumberColumn::name('location')
-            ->label('Location')
-            ->alignCenter(),
-            Column::callback(['id'], function ($id) {
-                return view('components.table-action', ['link' => '/admin/customer/' . $id]);
-            })->label('Action')->alignCenter()->unsortable()
         ];
     }
 }

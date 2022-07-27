@@ -4,13 +4,16 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Laravel</title>
+        <title>CSB</title>
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://unpkg.com/flowbite@1.4.2/dist/flowbite.min.css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <script src="https://cdn.tailwindcss.com"></script>
+        <link rel="stylesheet" href="owlcarousel/owl.carousel.min.css">
+        <link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css">
+
     </head>
     <body class="antialiased">
         <nav class="bg-[#2A1A5E] border-gray-200 px-2 sm:px-4 py-5">
@@ -59,21 +62,14 @@
         <div class="bg-[#F0C929] px-20 py-10">
             <h1 class="font-bold text-white text-2xl text-center pb-10">SERVICES</h1>
             <div class="md:flex">
-                <div class="bg-white rounded-lg p-10 flex-1 m-5 shadow-lg">
-                    <img src="https://s3-alpha.figma.com/hub/file/948140848/1f4d8ea7-e9d9-48b7-b70c-819482fb10fb-cover.png" alt="">
-                    asdf
-                </div>
-                <div class="bg-white rounded-lg p-10 flex-1 m-5 shadow-lg">
-                    <img src="https://s3-alpha.figma.com/hub/file/948140848/1f4d8ea7-e9d9-48b7-b70c-819482fb10fb-cover.png" alt="">
-                    asdf
-                </div>
-                <div class="bg-white rounded-lg p-10 flex-1 m-5 shadow-lg">
-                    <img src="https://s3-alpha.figma.com/hub/file/948140848/1f4d8ea7-e9d9-48b7-b70c-819482fb10fb-cover.png" alt="">
-                    asdf
-                </div>
-                <div class="bg-white rounded-lg p-10 flex-1 m-5 shadow-lg">
-                    <img src="https://s3-alpha.figma.com/hub/file/948140848/1f4d8ea7-e9d9-48b7-b70c-819482fb10fb-cover.png" alt="">
-                    asdf
+                <div class="owl-carousel">
+                    <div> Your Content </div>
+                    <div> Your Content </div>
+                    <div> Your Content </div>
+                    <div> Your Content </div>
+                    <div> Your Content </div>
+                    <div> Your Content </div>
+                    <div> Your Content </div>
                 </div>
             </div>
         </div>
@@ -117,5 +113,12 @@
             Copyright © 2022 PT CAHAYA SEBELAS BINTANG
         </div>
         <script src="https://unpkg.com/flowbite@1.4.2/dist/flowbite.js"></script>
+        <script src="jquery.min.js"></script>
+        <script src="owlcarousel/owl.carousel.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                $(".owl-carousel").owlCarousel();
+            });
+        </script>
     </body>
 </html>
