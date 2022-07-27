@@ -19,7 +19,7 @@ class CategoryComponent extends LivewireDatatable
     {
         return [
             Column::name('id')->label('Id')->defaultSort('asc'),
-            column::name('name')->label('Nama'),
+            column::name('name')->label('Name'),
             Column::name('description')->label('Description'),
             Column::callback(['id'], function ($id) {
                 return view('components.table-action', ['link' => '/admin/category/' . $id]);

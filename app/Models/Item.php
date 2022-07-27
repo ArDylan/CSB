@@ -18,4 +18,9 @@ class Item extends Model
         'image',
         'price',
     ];
+
+    public function item_images()
+    {
+        return $this->hasMany('App\Models\Item_image');
+    }
 }

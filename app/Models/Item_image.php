@@ -12,4 +12,9 @@ class Item_image extends Model
         'item_id',
         'image',
     ];
+
+    public function item()
+    {
+        return $this->belongsTo('App\Models\Item');
+    }
 }

@@ -22,7 +22,7 @@ return new class extends Migration
             $table->String("discount");
             $table->String("warranty");
             $table->String("description");
-            $table->String("image");
+            $table->String("image")->nullable();
             $table->String("price");
             $table->timestamps();
         });
