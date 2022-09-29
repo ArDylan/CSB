@@ -27,71 +27,34 @@
                 <div class="hidden w-full md:block md:w-auto" id="mobile-menu">
                     <ul class="flex flex-col mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium">
                         <li>
-                            <a href="{{route('home')}}" class="block py-2 pr-4 pl-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 text-white" aria-current="page">Home</a>
+                            <a href="#" class="block py-2 pr-4 pl-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 text-white" aria-current="page">Home</a>
                         </li>
                         <li>
-                            <a href="{{route('aboutus')}}" class="block py-2 pr-4 pl-3 border-b border-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 text-gray-400 md:hover:text-white hover:bg-gray-700 hover:text-white md:hover:bg-transparent border-gray-700">About</a>
-                        </li>
-                        {{-- <li>
-                            <a href="#service" class="block py-2 pr-4 pl-3 border-b border-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 text-gray-400 md:hover:text-white hover:bg-gray-700 hover:text-white md:hover:bg-transparent border-gray-700">Services</a>
-                        </li> --}}
-                        <li>
-                            <a href="{{route('home')}}#category" class="block py-2 pr-4 pl-3 border-b border-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 text-gray-400 md:hover:text-white hover:bg-gray-700 hover:text-white md:hover:bg-transparent border-gray-700">Pricing</a>
+                            <a href="#" class="block py-2 pr-4 pl-3 border-b border-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 text-gray-400 md:hover:text-white hover:bg-gray-700 hover:text-white md:hover:bg-transparent border-gray-700">About</a>
                         </li>
                         <li>
-                            <a href="#contact" class="block py-2 pr-4 pl-3 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 text-gray-400 md:hover:text-white hover:bg-gray-700 hover:text-white md:hover:bg-transparent">Contact</a>
+                            <a href="#" class="block py-2 pr-4 pl-3 border-b border-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 text-gray-400 md:hover:text-white hover:bg-gray-700 hover:text-white md:hover:bg-transparent border-gray-700">Services</a>
                         </li>
                         <li>
-                            <a href="/login" class="block py-2 pr-4 pl-3 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 text-gray-400 md:hover:text-white hover:bg-gray-700 hover:text-white md:hover:bg-transparent">Admin</a>
+                            <a href="#" class="block py-2 pr-4 pl-3 border-b border-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 text-gray-400 md:hover:text-white hover:bg-gray-700 hover:text-white md:hover:bg-transparent border-gray-700">Pricing</a>
+                        </li>
+                        <li>
+                            <a href="#" class="block py-2 pr-4 pl-3 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 text-gray-400 md:hover:text-white hover:bg-gray-700 hover:text-white md:hover:bg-transparent">Contact</a>
+                        </li>
+                        <li>
+                            <a href="#" class="block py-2 pr-4 pl-3 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 text-gray-400 md:hover:text-white hover:bg-gray-700 hover:text-white md:hover:bg-transparent">Admin</a>
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
-        <div class="bg-[#F7F7F7] md:flex text-left py-20">
-            <div class="flex-1 px-10">
-                <img src="https://s3-alpha.figma.com/hub/file/948140848/1f4d8ea7-e9d9-48b7-b70c-819482fb10fb-cover.png" class="m-auto" alt="">
-            </div>
-            <div class="flex-1 my-auto px-10 md:pl-32 pr-10 pt-5 md:pt-0">
-                <h1 class="">Slogan</h1>
-                <div>We are a company engaged in the field of General Contractor and Supplier.
-                    Our company is an experienced company in the field of General Contractor
-                    & Supplier with employees who are experts in their fields.</div>
-            </div>
-        </div>
-        {{-- <div class="bg-[#F0C929] px-20 py-10" id="service">
-            <h1 class="font-bold text-white text-2xl text-center pb-10">SERVICES</h1>
-            <div class="md:flex">
-                <div class="owl-carousel">
-                    <div> Your Content </div>
-                    <div> Your Content </div>
-                    <div> Your Content </div>
-                    <div> Your Content </div>
-                    <div> Your Content </div>
-                    <div> Your Content </div>
-                    <div> Your Content </div>
-                </div>
-            </div> --}}
-        {{-- </div> --}}
-        <div class="bg-[#F0C929] px-20 py-10">
-            <h1 class="font-bold text-white text-2xl text-center pb-10">CATEGORY ITEM</h1>
+        <div class="bg-[#ccbd7e] px-20 py-10">
+            <h1 class="font-bold text-white text-2xl text-center pb-10">Item {{$category->name}}</h1>
             <div class="grid grid-cols-4 gap-4">
-                @foreach ($categories as $category)
-                    <a href="{{route('item.user', ["category" => $category->id])}}" class="bg-white rounded-lg p-10 m-5 shadow-lg text-center text-lg">
-                        <img src="{{asset('storage/category-image/'.$category->image)}}" class="w-52 h-52 mb-4" alt="">
-                        {{$category->name}}
-                    </a>
-                @endforeach
-            </div>
-        </div>
-        <div class="pt-10">
-            <h1 class="font-bold text-[#F0C929] text-2xl text-center pb-10">PARTNER SHIP</h1>
-            <p class="font-bold text-[#F0C929] text-lg text-center pb-10">Here are some of the clients we work with frequently:</p>
-            <div class="md:flex p-10">
-                @foreach ($costumers as $customer)
-                    <div class="bg-white rounded-lg p-10 m-5 shadow-lg text-center text-lg">
-                        <img src="{{asset('storage/customer-image/'.$customer->image)}}" class="w-52 h-52 mb-4" alt="">
-                        {{$customer->name}}
+                @foreach ($items as $item)
+                    <div href="{{route('item.user', ["item", $item->id])}}" class="bg-white rounded-lg p-10 m-5 shadow-lg text-center text-lg">
+                        <img src="{{asset('storage/item-image/'.$item->image)}}" class="w-52 h-52 mb-4" alt="">
+                        {{$item->name}}
                     </div>
                 @endforeach
             </div>

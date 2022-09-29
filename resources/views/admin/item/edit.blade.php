@@ -55,7 +55,7 @@
 </form>
 <div class="grid grid-cols-4 gap-4 mt-10 py-3">
     @foreach ($item->item_images as $file)
-    <form action="{{route('item.delete.image', ['item_image' => $file->id])}}" method="post">
+    <form action="{{route('item.delete.image', ['item_image' => $file->id])}}" method="post" enctype="multipart/form-data">
         @csrf
         @method('delete')
         <div>

@@ -1,9 +1,9 @@
 
 <aside class="hidden lg:flex w-64 min-h-screen" aria-label="Sidebar">
     <div class="w-64 overflow-y-auto py-4 px-5 bg-gray-50 dark:bg-gray-800">
-       <a href="https://flowbite.com/" class="flex items-center pl-2.5 mb-5">
+       <a href="/" class="flex items-center pl-2.5 mb-5">
           {{-- <img src="https://flowbite.com/docs/images/logo.svg" class="mr-3 h-6 sm:h-7" alt="Flowbite Logo"> --}}
-          <span class="self-center text-xl font-semibold whitespace-nowrap dark:text-white">Flowbite</span>
+          <span class="self-center text-xl font-semibold whitespace-nowrap dark:text-white">CSB</span>
        </a>
        <a href="" class="h-screen fixed"></a>
        <ul class="space-y-2">

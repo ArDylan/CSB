@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Storage;
+
 use App\Models\Category;
 
 class CategoryController extends Controller
@@ -43,9 +45,21 @@ class CategoryController extends Controller
             'description' => 'required|max:255',
         ];
 
+
         $validatedData = $request->validate($validate);
 
         $category->update($validatedData);
+
+        if ($request->image) {
+            $nameFile = $category->id . ".png";
+            $request->image->storeAs(
+                'public/category-image', $nameFile
+            );
+
+            $category->update([
+                'image' => $nameFile,
+            ]);
+        }
 
         return redirect(route('category'));
     }

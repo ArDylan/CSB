@@ -18,7 +18,7 @@ return new class extends Migration
             $table->String("name");
             $table->String("email");
             $table->String("no_phone");
-            $table->String("image");
+            $table->String("image")->nullable();
             $table->String("location");
             $table->timestamps();
         });
