@@ -29,4 +29,10 @@ class HomeController extends Controller
 
         return view("item", compact("items", "category"));
     }
+
+    public function login()
+    {
+        return view("login");
+        
+    }
 }

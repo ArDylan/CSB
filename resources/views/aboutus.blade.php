@@ -48,6 +48,20 @@
                 </div>
             </div>
         </nav>
+        <div id="contact" class="bg-[#2A1A5E] md:flex w-full px-5 md:px-32 pt-20 text-white">
+            <div class="flex-1 md:pl-10 md:pr-32">
+                <img src="https://klikalamat.com/wp-content/uploads/2016/08/PT.-CAHAYA-SEBELAS-BINTANG.png" alt="" width="80" height="50">
+                <p class="mt-10">
+                    Jl. Syarifuddin Yoes Komplek Balikpapan Regency. Ruko Victorian Block V-2 no.2 Balikpapan Selatan. Kalimantan Timur
+                </p>
+                <div><i class="fa-solid fa-square-phone fa-xl text-[#F0C929] mt-10 text-center"></i><span class="ml-5">0542-7211614</span></div>
+                <div><i class="fa-solid fa-mobile fa-xl text-[#F0C929] mt-8 text-center"></i><span class="ml-5">0542-7211614</span></div>
+                <div><i class="fa-solid fa-envelope fa-xl text-[#F0C929] mt-8 text-center"></i><span class="ml-5">info@11bintang.com</span></div>
+            </div>
+            <div class="flex-1 mt-5 md:mt-0">
+                <iframe class="m-auto w-10/12" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2238.6954898917033!2d116.89241490069891!3d-1.2281543646764999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x9d789db2e72a996!2zMcKwMTMnNDAuOSJTIDExNsKwNTMnNDEuOSJF!5e0!3m2!1sid!2sid!4v1650540818113!5m2!1sid!2sid" width="450" height="337" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
         <div class="bg-[#2A1A5E] text-center text-white p-10">
             Copyright © 2022 PT CAHAYA SEBELAS BINTANG
         </div>

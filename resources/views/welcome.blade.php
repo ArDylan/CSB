@@ -36,7 +36,7 @@
                             <a href="#service" class="block py-2 pr-4 pl-3 border-b border-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 text-gray-400 md:hover:text-white hover:bg-gray-700 hover:text-white md:hover:bg-transparent border-gray-700">Services</a>
                         </li> --}}
                         <li>
-                            <a href="{{route('home')}}#category" class="block py-2 pr-4 pl-3 border-b border-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 text-gray-400 md:hover:text-white hover:bg-gray-700 hover:text-white md:hover:bg-transparent border-gray-700">Pricing</a>
+                            <a href="#category" class="block py-2 pr-4 pl-3 border-b border-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 text-gray-400 md:hover:text-white hover:bg-gray-700 hover:text-white md:hover:bg-transparent border-gray-700">Category</a>
                         </li>
                         <li>
                             <a href="#contact" class="block py-2 pr-4 pl-3 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 text-gray-400 md:hover:text-white hover:bg-gray-700 hover:text-white md:hover:bg-transparent">Contact</a>
@@ -48,12 +48,12 @@
                 </div>
             </div>
         </nav>
-        <div class="bg-[#F7F7F7] md:flex text-left py-20">
+        <div class="bg-[#F7F7F7] md:flex text-left py-28">
             <div class="flex-1 px-10">
-                <img src="https://s3-alpha.figma.com/hub/file/948140848/1f4d8ea7-e9d9-48b7-b70c-819482fb10fb-cover.png" class="m-auto" alt="">
+                <img src="{{asset("img/master image-01.png")}}" class="m-auto" alt="">
             </div>
             <div class="flex-1 my-auto px-10 md:pl-32 pr-10 pt-5 md:pt-0">
-                <h1 class="">Slogan</h1>
+                <h1 class="font-semibold text-lg">CSB</h1>
                 <div>We are a company engaged in the field of General Contractor and Supplier.
                     Our company is an experienced company in the field of General Contractor
                     & Supplier with employees who are experts in their fields.</div>
@@ -73,7 +73,7 @@
                 </div>
             </div> --}}
         {{-- </div> --}}
-        <div class="bg-[#F0C929] px-20 py-10">
+        <div id="category" class="bg-[#F0C929] px-20 py-10">
             <h1 class="font-bold text-white text-2xl text-center pb-10">CATEGORY ITEM</h1>
             <div class="grid grid-cols-4 gap-4">
                 @foreach ($categories as $category)
@@ -96,15 +96,25 @@
                 @endforeach
             </div>
         </div>
-        <div class="bg-[#2A1A5E] md:flex w-full px-5 md:px-32 pt-20 text-white">
+        <div id="contact" class="bg-[#2A1A5E] md:flex w-full px-5 md:px-32 pt-20 text-white">
             <div class="flex-1 md:pl-10 md:pr-32">
                 <img src="https://klikalamat.com/wp-content/uploads/2016/08/PT.-CAHAYA-SEBELAS-BINTANG.png" alt="" width="80" height="50">
                 <p class="mt-10">
                     Jl. Syarifuddin Yoes Komplek Balikpapan Regency. Ruko Victorian Block V-2 no.2 Balikpapan Selatan. Kalimantan Timur
                 </p>
-                <div><i class="fa-solid fa-square-phone fa-xl text-[#F0C929] mt-10 text-center"></i><span class="ml-5">0542-7211614</span></div>
-                <div><i class="fa-solid fa-mobile fa-xl text-[#F0C929] mt-8 text-center"></i><span class="ml-5">0542-7211614</span></div>
-                <div><i class="fa-solid fa-envelope fa-xl text-[#F0C929] mt-8 text-center"></i><span class="ml-5">info@11bintang.com</span></div>
+                <div class="flex">
+                    <div class="flex-1">
+                        <h1 class="mt-8">Contact Person</h1>
+                        <i class="fa-solid fa-mobile fa-xl text-[#F0C929] mt-8 text-center"></i><span class="ml-5">Dewi - 081350477224</span><br>
+                        <i class="fa-solid fa-mobile fa-xl text-[#F0C929] mt-8 text-center"></i><span class="ml-5">Muftia - 085346435409</span><br>
+                        <i class="fa-solid fa-mobile fa-xl text-[#F0C929] mt-8 text-center"></i><span class="ml-5">Adib - 085132254440</span><br>
+                        <i class="fa-solid fa-mobile fa-xl text-[#F0C929] mt-8 text-center"></i><span class="ml-5">Rido - 082281218379</span><br>
+                    </div>
+                    <div class="flex-1 pt-12">
+                        <i class="fa-solid fa-square-phone fa-xl text-[#F0C929] mt-10 text-center"></i><span class="ml-5">0542-7211614</span>
+                        <div><i class="fa-solid fa-envelope fa-xl text-[#F0C929] mt-8 text-center"></i><span class="ml-5">info@11bintang.com</span></div>
+                    </div>
+                </div>
             </div>
             <div class="flex-1 mt-5 md:mt-0">
                 <iframe class="m-auto w-10/12" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2238.6954898917033!2d116.89241490069891!3d-1.2281543646764999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x9d789db2e72a996!2zMcKwMTMnNDAuOSJTIDExNsKwNTMnNDEuOSJF!5e0!3m2!1sid!2sid!4v1650540818113!5m2!1sid!2sid" width="450" height="337" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
