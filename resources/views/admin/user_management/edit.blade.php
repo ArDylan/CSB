@@ -16,13 +16,13 @@
         <label for="email" class="block mb-2 text-sm font-medium text-gray-900">Email</label>
         <input name="email" value="{{$user->email}}" type="text" id="email" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5" placeholder="ex: john@gmail.com">
     </div>
-    <div class="mb-6">
+    {{-- <div class="mb-6">
         <label for="level" class="block mb-2 text-sm font-medium text-gray-900" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5">Role</label>
         <select name="level" id="level" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5">
             <option value="admin" @if($user->level == "admin") selected @endif>Admin</option>
             <option value="user" @if($user->level == "user") selected @endif>User</option>
         </select>
-    </div>
+    </div> --}}
     <div class="mb-6">
         <label for="password" class="block mb-2 text-sm font-medium text-gray-900">Password</label>
         <input name="password" type="password" id="password" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5" placeholder="Kosongkan Bila Tidak ada Perubahan">

@@ -17,7 +17,7 @@ class UserController extends Controller
     {
         $this->middleware('auth');
     }
-    
+
     public function index()
     {
         return view('admin.user_management.index');
@@ -34,14 +34,12 @@ class UserController extends Controller
         $request->validate([
             'name' => ['required', 'string', 'max:255'],
             'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
-            'level' => ['required', 'string', 'max:255'],
             'password' => ['required', 'confirmed', Rules\Password::defaults()],
         ]);
 
         $user = User::create([
             'name' => $request->name,
             'email' => $request->email,
-            'level' => $request->level,
             'password' => Hash::make($request->password),
         ]);
 
@@ -58,7 +56,6 @@ class UserController extends Controller
         $validate = [
             'name' => 'required|max:255',
             'email' => 'required|max:255',
-            'level' => 'required|max:255',
         ];
 
         $validatedData = $request->validate($validate);
