@@ -27,7 +27,19 @@
                     <a href="" class="block lg:hidden py-2 pr-4 pl-3 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 text-gray-400 md:hover:text-white hover:bg-gray-700 hover:text-white md:hover:bg-transparent">Contact</a>
                 </li>
                 <li>
-                    <a href="" class="block py-2 pr-4 mr-3 pl-3 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 text-gray-400 md:hover:text-white hover:bg-gray-700 hover:text-white md:hover:bg-transparent">Logout</a>
+                    <form method="POST" action="{{ route('logout') }}" x-data>
+                        @csrf
+    
+                        {{-- <x-jet-dropdown-link href="{{ route('logout') }}"
+                        @click.prevent="$root.submit();">
+                        {{ __('Log Out') }}
+                    </x-jet-dropdown-link> --}}
+                        <button type="submit" class="block text-red-500 py-2 pr-4 mr-3 pl-3 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 text-gray-400 md:hover:text-white hover:bg-gray-700 hover:text-white md:hover:bg-transparent" >
+                            <i class="fa-solid fa-right-from-bracket mr-1 rotate-180"></i>
+                            Keluar
+                        </button>
+                    </form>
+                    {{-- <a href="" class="block py-2 pr-4 mr-3 pl-3 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 text-gray-400 md:hover:text-white hover:bg-gray-700 hover:text-white md:hover:bg-transparent">Logout</a> --}}
                 </li>
             </ul>
         </div>

@@ -13,6 +13,11 @@ use Illuminate\Validation\Rules;
 
 class UserController extends Controller
 {
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
+    
     public function index()
     {
         return view('admin.user_management.index');
@@ -25,6 +30,7 @@ class UserController extends Controller
     public function store(Request $request)
     {
         // dd($request);
+        
         $request->validate([
             'name' => ['required', 'string', 'max:255'],
             'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
