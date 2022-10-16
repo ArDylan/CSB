@@ -24,6 +24,7 @@ Route::get('/', [HomeController::class, 'index'])->name('home');
 Route::get('/public', [HomeController::class, 'index'])->name('public');
 Route::get('/category/{category}', [HomeController::class, 'items'])->name('item.user');
 Route::get('/aboutus', [HomeController::class, 'aboutus'])->name('aboutus');
+Route::get('/login', [HomeController::class, 'login']);
 
 //user
 Route::get('/admin/user-management', [UserController::class, 'index'])->name('user');
